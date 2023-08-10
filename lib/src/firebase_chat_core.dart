@@ -279,9 +279,9 @@ class FirebaseChatCore {
 
   /// Returns a stream of changes in a room from Firebase.
   Stream<types.Room> room(String roomId) {
-    final fu = firebaseUser;
+    final fibaseuser = firebaseUser;
 
-    if (fu == null) return const Stream.empty();
+    if (fibaseuser == null) return const Stream.empty();
 
     return getFirebaseFirestore()
         .collection(config.roomsCollectionName)
